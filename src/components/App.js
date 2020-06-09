@@ -32,9 +32,6 @@ class App extends Component {
     };
   }
   
-
-  
-
   //handle search form submit
   onSearchSubmit = async (term) => {
     const response = await Youtube.get('/search', {
@@ -76,19 +73,6 @@ class App extends Component {
         </Grid>
       </div>
     )
-
-    /*return (
-        <React.Fragment>
-            <Container>
-                <SearchBar onFormSubmit={this.onSearchSubmit}/>
-                <VideoDetails video={this.state.selectedVideo} />
-                <VideoList 
-                videos={this.state.videos} 
-                onVideoSelect={this.onVideoSelect}
-                />
-            </Container>
-        </React.Fragment>
-    )*/
   }
 }
 
